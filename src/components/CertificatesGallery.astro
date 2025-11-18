@@ -1,0 +1,39 @@
+---
+import fs from 'fs';
+import path from 'path';
+
+// Absoluter Pfad zum public-Zertifikate-Ordner
+const certificatesDir = path.resolve('./public/certificates');
+
+// Nur PNG-Dateien einlesen
+const imageFiles = fs
+  .readdirSync(certificatesDir)
+  .filter(file => file.toLowerCase().endsWith('.png'));
+---
+
+<style>
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1rem;
+    padding: 1rem 0;
+  }
+
+  .gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+  }
+
+  .gallery img:hover {
+    transform: scale(1.03);
+  }
+</style>
+
+<div class="gallery">
+  {imageFiles.map(file => (
+    <img src={`/certificates/${file}`} alt={`Zertifikat ${file}`} loading="lazy" />
+  ))}
+</div>
