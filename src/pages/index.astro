@@ -10,11 +10,21 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 <html lang="en">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<style>
+			.Info{
+				flex-wrap: wrap;
+				-ms-flex-item-align: auto;
+			}
+		</style>
 	</head>
 	<body>
 		<Header />
 		<main>
-			<h1>Philip Tobias Ellmauthaler</h1>
+			<div class="Info">
+				<h1>Philip Tobias Ellmauthaler</h1>
+				<img src="src/assets/images/Ell.jpg"/>
+			</div>
+			
 			<p>
 				Welcome to my Portfolio page
 			</p>
