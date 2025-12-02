@@ -2,7 +2,7 @@
 title: 'Diplomarbeit'
 description: 'Entwurf und Implementierung einer Softwarelösung zur Automatisierung der Terminplanung mündlicher Wiederholungsprüfungen an österreichischen Höheren Technischen Lehranstalten.'
 pubDate: '12.1.2025'
-heroImage: '../../assets/blog-placeholder-2.jpg'
+heroImage: '../../assets/blog-placeholder-3.jpg'
 ---
 
 Hier ist ein Link zum Github Repo: [https://github.com/Grim-Reaperr/Diplomarbeit](https://github.com/Grim-Reaperr/Diplomarbeit)
